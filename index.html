@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" >
+<meta charset="UTF-8">
+<title> Δημιουργία φόρμας συλλογής στοιχείων </title>
+
+</head>
+
+
+<body>
+<h1>ΦΟΡΜΑ</h1>
+<h2>Προσωπίκα στοιχέια</h2>
+<form>
+<label for="eidos" title="Επιλέξτε αν είστε φοιτητής ή θεατής">Τίτλος:</label>
+<select id="eidos">
+<option>φοιτητής</option>
+<option>θεατής</option>
+</select>
+<br>
+<label for="onoma" title="Συμπληρώστε το όνομα σας με ελληνικά γράμματα">Όνομα:</label>
+<input type="text" id="onoma" placeholder="Κώστας">
+<br>
+<label for="epitheto" title="Συμπληρώστε το επώνυμο σας με ελληνικά γράμματα">Επίθετο:</label>
+<input type="text" id="epitheto" placeholder="Μενελάου">
+<br>
+<label for="bday" title="Επιλέξτε ημερομηνία από το 2008 έως το 2010">Ημ. γέννησης:</label>
+<input type="date" id="bday" min="2008-01-01" max="2010-12-31">
+
+<br>
+
+<label for="country" title="Επιλέξτε τη χώρα κατοικίας σας">Χώρα:</label>
+<select id="country">
+<option>Ελλάδα</option>
+<option>Τουρκία</option>
+<option>Ιταλία</option>
+<option>Αλβανία</option>
+<option>Βουλγαρία</option>
+</select>
+<br>
+<br>
+<label for="oikogeniaki" title="Επιλέξτε την οικογενειακή σας κατάσταση">Οικ. κατάσταση:</label>
+<select id="oikogeniaki>
+<option>Έγγαμος</option>
+<option>Άγαμος</option>
+</select>
+
+<h2>Στοιχέια επικοινωνίας</h2>
+<label for="diefthinsi">Διεύθυνση:</label>
+<input type="text" id="diefthinsi" placeholder="Μιχαήλ Καραολή">
+<br>
+<label for="poli">Πόλη,Περιοχή:</label>
+<input type="text" id="poli" name="poli" size="10" maxlength="15" placeholder="π.χ. Πειραιάς">
+<br>
+<label for="taxidromikosK">Ταχυδρομικός Κώδικας:
+</label>
+<input type="text" size="5" maxlength="5" id="taxidromikosK" placeholder="18456">
+<br>
+<label for="tel">Τηλέφωνο:</label>
+<input type="text" id="tel" placeholder="2101234567">
+<br>
+<label for="email">Διεύθυνση ηλεκτρονικού ταχυδρομείου:</label>
+<input type="text" id="email"placeholder="test@gmail.com">
+<br>
+<br>
+
+<h2>Δημιουργία κωδικού πρόσβασης</h2>
+<label for="username">Όνομα χρήστη:</label>
+<input type="text" id="username" placeholder="username" required>
+<br>
+<label for="password">Κωδικός πρόσβασης:</label>
+<input type="password" id="password" placeholder="******" maxlength="8"  required>
+<br>
+
+
+
+<label>
+  <input type="checkbox" id="acceptance">
+  Αποδέχομαι τους όρους και τις προϋποθέσεις
+</label>
+
+<br>
+<br>
+<input type="reset">
+<br>
+<input type="submit">
+</form>
+<div class="qr-box">
+  <p>Σκάναρε το QR</p>
+  <a href="">
+    <img src="QR.png" alt="QR code της σελίδας" class="qr">
+  </a>
+</div>
+
+
+
+
+</body>
+</html>

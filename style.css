@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+input[maxlength] {
+  border: 1px solid red;
+}
+input {
+  background-color: lightgray;
+}
+div > p {
+  color: blue;
+    margin: 0 0 8px 0;
+}
+  h1,h2{
+  color:rgb(77, 26, 143);
+  }
+  input {
+  background-color: lightgray;  /* γκρι όταν ο χρήστης δεν είναι μέσα στο πεδίο */
+  border: 1px solid gray;
+  padding: 3px;
+  margin-bottom: 10px;
+  }
+
+  label + input { 
+    margin-left: 10px;
+}
+.qr-box {
+  width: 170px; /* πλατος του πλαισιου */
+  padding: 10px; /* κενο αναμεσα στα πλαίσιο και την εικόνα */
+  border: 2px solid #333; /*περιγραμμα*/
+  margin: 20px auto;
+  text-align: center; /*κεντραρισμα του περιεχομενου */
+}
+
+.qr {
+  width: 150px; /* μεγεθος της εικόνασ */
+}
+input[required] {
+  border: 1px solid orange;
+}
+
+@media (prefers-color-scheme: dark) {
+  .qr {
+    filter: invert(50%);
+  }
+}
+@media (max-width: 500px) {
+  body { background-color: lightyellow; }
+}
+form label {
+  display: inline-flex;
+  width:auto;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+input[required] {
+  border: 1px solid orange;
+}
+input {
+  margin-bottom: 10px; 
+}
+body {
+   background-color: rgb(108, 179, 177);
+    font-family: Arial, sans-serif;
+    margin-left: 20px
+    }
